@@ -9,19 +9,22 @@
             font-family: Arial, sans-serif;
             text-align: center;
             background-color: #f8f9fa;
+            margin: 0;
             padding: 20px;
         }
         h1 {
             color: #000000;
+            font-size: 2rem;
         }
         #sorteado {
-            font-size: 3em;
+            font-size: 2.5rem;
             margin: 20px 0;
             color: #000000;
+            font-weight: bold;
         }
         #btnSortear {
             padding: 10px 20px;
-            font-size: 1.2em;
+            font-size: 1.2rem;
             background-color: #007bff;
             color: #fff;
             border: none;
@@ -32,9 +35,20 @@
             background-color: #6c757d;
         }
         #restantes {
-            font-size: 1.2em;
+            font-size: 1.2rem;
             color: #333;
+            margin: 10px 0;
         }
+        #numerosSorteados {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #555;
+            max-width: 90%;
+            margin: 20px auto;
+            word-wrap: break-word;
+        }
+
+        /* Responsividade */
         @media (max-width: 768px) {
             h1 {
                 font-size: 1.8rem;
@@ -73,6 +87,7 @@
     <div id="sorteado">Aguardando sorteio...</div>
     <div id="restantes">Números restantes: 90</div>
     <button id="btnSortear">Sortear Número</button>
+    <div id="numerosSorteados"><strong>Números já sorteados:</strong> Nenhum número sorteado ainda.</div>
 </body>
 <script src="script.js"></script>
 </html>
