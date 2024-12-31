@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio de Bingo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        h1 {
+            color: #000000;
+        }
+        #sorteado {
+            font-size: 3em;
+            margin: 20px 0;
+            color: #000000;
+        }
+        #btnSortear {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #btnSortear:disabled {
+            background-color: #6c757d;
+        }
+        #restantes {
+            font-size: 1.2em;
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            #sorteado {
+                font-size: 2rem;
+            }
+            #btnSortear {
+                padding: 8px 16px;
+                font-size: 1rem;
+            }
+            #restantes {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            #sorteado {
+                font-size: 1.8rem;
+            }
+            #btnSortear {
+                padding: 6px 12px;
+                font-size: 0.9rem;
+            }
+            #restantes {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Sorteio de Bingo</h1>
+    <div id="sorteado">Aguardando sorteio...</div>
+    <div id="restantes">Números restantes: 90</div>
+    <button id="btnSortear">Sortear Número</button>
+</body>
+<script src="script.js"></script>
+</html>
